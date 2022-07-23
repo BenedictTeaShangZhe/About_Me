@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Nametxt"
+        style="@style/StringFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:text="@string/benedict_tea_shang_zhe"
+        android:textAlignment="center"
+        android:textColor="#00838F"
+        android:textSize="@dimen/TextSize" />
+
+    <EditText
+        android:id="@+id/Nameinput"
+        style="@style/StringFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="What is your nickname?"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Displaytxt"
+        style="@style/StringFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/Confirmbtn"
+        style="@style/StringFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Confirm" />
+
+    <ImageView
+        android:id="@+id/Starimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/star_image"
+        android:padding="8sp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Contenttxt"
+            style="@style/StringFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:text="@string/BIO"
+            android:textColor="#673AB7" />
+    </ScrollView>
+
+</LinearLayout>
